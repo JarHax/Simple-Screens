@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.jarhax.simplescreens.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "simplescreens.refmap.json",
+  "mixins": [
+    "MixinEarlyLoaderGUI"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
