@@ -1,22 +1,25 @@
-modLoader = "javafml" #mandatory
-loaderVersion = "[36,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+modLoader = "javafml"
+loaderVersion = "[36,)"
 license = "All Rights Reserved"
-[[mods]] #mandatory
-modId = "simplescreens" #mandatory
-version = "${file.jarVersion}" #mandatory
-displayName = "SimpleScreens" #mandatory
-description = '''
 
+[[mods]]
+modId = "simplescreens"
+version = "${file.jarVersion}"
+displayName = "SimpleScreens"
+description = '''
+Allows customizing the background of loading screens.
 '''
-[[dependencies.simplescreens]] #optional
-modId = "forge" #mandatory
-mandatory = true #mandatory
-versionRange = "[36,)" #mandatory
+
+[[dependencies.simplescreens]]
+modId = "forge"
+mandatory = true
+versionRange = "[36,)"
 ordering = "NONE"
-side = "BOTH"
+side = "CLIENT"
+
 [[dependencies.simplescreens]]
 modId = "minecraft"
 mandatory = true
 versionRange = "[1.16.5,1.17)"
 ordering = "NONE"
-side = "BOTH"
+side = "CLIENT"

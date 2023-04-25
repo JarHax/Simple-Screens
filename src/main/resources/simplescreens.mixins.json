@@ -5,9 +5,14 @@
   "compatibilityLevel": "JAVA_8",
   "refmap": "simplescreens.refmap.json",
   "mixins": [
-    "MixinEarlyLoaderGUI"
   ],
   "client": [
+    "MixinEarlyLoaderGUI",
+    "MixinWorldLoadProgressScreen",
+    "MixinDirtMessageScreen",
+    "MixinWorkingScreen",
+    "MixinDownloadTerrainScreen",
+    "MixinMinecraft"
   ],
   "injectors": {
     "defaultRequire": 1
