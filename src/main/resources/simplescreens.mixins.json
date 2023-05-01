@@ -11,8 +11,7 @@
     "MixinWorldLoadProgressScreen",
     "MixinDirtMessageScreen",
     "MixinWorkingScreen",
-    "MixinDownloadTerrainScreen",
-    "MixinMinecraft"
+    "MixinDownloadTerrainScreen"
   ],
   "injectors": {
     "defaultRequire": 1

@@ -1,5 +1,6 @@
 package com.jarhax.simplescreens.mixin;
 
+import com.jarhax.simplescreens.Constants;
 import com.jarhax.simplescreens.SimpleScreens;
 import com.mojang.blaze3d.matrix.MatrixStack;
 import net.minecraft.client.Minecraft;

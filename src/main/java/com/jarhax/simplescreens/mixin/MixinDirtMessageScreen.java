@@ -1,6 +1,6 @@
 package com.jarhax.simplescreens.mixin;
 
-import com.jarhax.simplescreens.screens.WorldScreenLogic;
+import com.jarhax.simplescreens.SimpleScreens;
 import com.mojang.blaze3d.matrix.MatrixStack;
 import net.minecraft.client.gui.screen.DirtMessageScreen;
 import net.minecraft.client.gui.screen.Screen;
@@ -36,7 +36,7 @@ public abstract class MixinDirtMessageScreen extends Screen {
         }
 
         if (simplescreens$canDisplayOnScreen) {
-            WorldScreenLogic.renderBackground(this.minecraft, matrixStack);
+            SimpleScreens.renderBackground(this.minecraft, matrixStack);
         }
     }
 

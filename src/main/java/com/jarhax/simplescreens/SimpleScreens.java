@@ -1,6 +1,8 @@
 package com.jarhax.simplescreens;
 
+import com.mojang.blaze3d.matrix.MatrixStack;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.ResourceLocationException;
 import net.minecraftforge.fml.ExtensionPoint;
@@ -16,6 +18,7 @@ import java.util.List;
 public class SimpleScreens {
 
     private static Config config;
+    public static ResourceLocation backgroundTexture = null;
 
     public SimpleScreens() {
 
@@ -65,5 +68,20 @@ public class SimpleScreens {
         }
 
         return null;
+    }
+
+    public static void renderBackground(Minecraft mc, MatrixStack matrixStack) {
+
+        if (backgroundTexture == null) {
+            backgroundTexture = getWorldLoadTexture();
+        }
+
+        if (backgroundTexture != null) {
+
+            Minecraft.getInstance().getTextureManager().bindTexture(backgroundTexture);
+            final int width = mc.getMainWindow().getScaledWidth();
+            final int height = mc.getMainWindow().getScaledHeight();
+            Screen.blit(matrixStack, 0, 0, width, height, 0, 0.0F, 120, 120, 120, 120);
+        }
     }
 }
