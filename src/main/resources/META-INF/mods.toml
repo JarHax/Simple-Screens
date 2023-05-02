@@ -6,6 +6,8 @@ license = "All Rights Reserved"
 modId = "simplescreens"
 version = "${file.jarVersion}"
 displayName = "SimpleScreens"
+authors="Jaredlll08, Darkhax"
+credits="Kehaan"
 description = '''
 Allows customizing the background of loading screens.
 '''
