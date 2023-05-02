@@ -1,1 +1,3 @@
-# simplescreens
+# [Simple Screens](https://www.curseforge.com/minecraft/mc-mods/simple-screens)
+
+This mod allows you to easily customize the background image of loading screens in the game. For example you can set a new background image for the game loading screen or world loading screens. Your custom images are loaded from resource packs and can be any resolution as long as it's a PNG. We recommend 1920x1080 or a 16:9 aspect for the best results. For more information check out the project on [CurseForge](https://www.curseforge.com/minecraft/mc-mods/simple-screens).
